@@ -15,7 +15,11 @@ console.log(`Number of categories:`, categoryItems.length);
 //2) Dla każdego li.item na liście ul#categories znaleźć i wypisać : tekst nagłówka elementu (tagu <h2>) oraz liczbę el. zagnieżdżonych.
 //=> .forEach dla kolejnych elementów tablicy categoryItems[].
 
+
 categoryItems.forEach(item => {
+    //const itemName = item.querySelector("h2").textContent;
+    //const smallListOne = item.querySelectorAll("li").length;
+    //shortcode :)
   console.log(`Category:`, item.querySelector("h2").textContent);
   console.log(`Elements:`, item.querySelectorAll("li").length);
 });
