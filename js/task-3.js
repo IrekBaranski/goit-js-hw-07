@@ -7,8 +7,8 @@ const outputField = document.querySelector("span#name-output");
 inputField.addEventListener("input", writeAndErase);
 
 function writeAndErase(event) {
-  const formName = event.currentTarget.value.trim();
-  if (formName !== "") {
-    outputField.textContent = formName;
+  const greetingName = event.currentTarget.value.trim();
+  if (greetingName !== "") {
+    outputField.textContent = greetingName;
   }
 }
