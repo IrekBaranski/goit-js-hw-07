@@ -1,6 +1,7 @@
 
 
-// skrypt do zarządzania formularzem logowania
+//Zarządzanie formularzem logowania
+// Wysyłanie - submit 
 //wysyłanie form.login-form -> poprzez zdarzenie submit.
 //Podczas wysyłania formularza strona nie powinna być przeładowywana.
 //podczas submit: 
@@ -11,15 +12,16 @@
 //Do uzyskania dostępu do elementów formularza użyj właściwości elements.
 //Przy submit formularza wypisz obiekt z wprowadzonymi danymi w konsoli i zresetuj wartości pól formularza za pomocą metody reset.
 
-
+// submit
 const form = document.querySelector("form");
 form.addEventListener("submit", submitDone);
 
+//
 function submitDone(event) {
   event.preventDefault();
   if (
     event.target.elements.email.value.trim() === "" ||
-    event.target.elements.password.value === ""
+    event.target.elements.password.value === "" //spełniony jeden z warunków
   ) {
     alert("All form fields must be filled in");
   } else if (
